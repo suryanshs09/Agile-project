@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with = device-width, initial-scale = 1.0">
+        <title>Course Portal</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/logo1.png" alt="logo of Course Portal"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="underWork.html">ABOUT</a></li>
+                        <li><a href="underWork.html">BLOG</a></li>
+                        <li><a href="underWork.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>The Course Portal</h1>
+                <p>The place to find your dream college and learn all about your courses</p>
+                <a href="underWork.html" class="header-btn">Know More About Us</a>
+            </div>
+        </section>
+        <section class="course">
+            <h1>Choose Your Path</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="row">
+                <div class="course-col">
+                    <h3>Engineering</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore rerum in sapiente iure earum aut, illo recusandae pariatur voluptatibus quod, facere maiores quaerat. Culpa rem iste, tenetur atque repellendus reiciendis!</p>
+                </div>
+                <div class="course-col">
+                    <h3>Law</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore rerum in sapiente iure earum aut, illo recusandae pariatur voluptatibus quod, facere maiores quaerat. Culpa rem iste, tenetur atque repellendus reiciendis!</p>
+                </div>
+                <div class="course-col">
+                    <h3>Commerce</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore rerum in sapiente iure earum aut, illo recusandae pariatur voluptatibus quod, facere maiores quaerat. Culpa rem iste, tenetur atque repellendus reiciendis!</p>
+                </div>
+            </div>
+        </section>
+        <section class="colleges">
+            <h1>Find Your Dream University</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="row">
+                <div class="college-col">
+                    <img src="images/london.png" alt="University 1">
+                    <div class="layer">
+                        <h3>NMIMS</h3>
+                    </div>
+                </div>
+                <div class="college-col">
+                    <img src="images/newyork.png" alt="University 1">
+                    <div class="layer">
+                        <h3>SYMBIOSYS</h3>
+                    </div>
+                </div>
+                <div class="college-col">
+                    <img src="images/washington.png" alt="University 1">
+                    <div class="layer">
+                        <h3>AMITY</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="virtual-visit">
+            <h1>Virtually Visit your dream College from your Home</h1>
+            <a href="underWork.html" class="header-btn">HIRE A VISITOR</a>
+        </section>
+        <section class="testimonials">
+            <h1>What Our User Says</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="row">
+                <div class="testimonial-col">
+                    <img src="images/user1.jpg" alt="user 1">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugit molestiae architecto est sit corporis deserunt omnis, aut, praesentium suscipit quam explicabo, harum amet iure! Ratione corporis dolorem dignissimos laborum!</p>
+                        <h3>Akarati Jain</h3>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-col">
+                    <img src="images/user2.jpg" alt="user 1">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugit molestiae architecto est sit corporis deserunt omnis, aut, praesentium suscipit quam explicabo, harum amet iure! Ratione corporis dolorem dignissimos laborum!</p>
+                        <h3>Suryansh Sharma</h3>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sit iste, amet vel cupiditate eveniet dolor provident fuga nihil? <br> Perspiciatis numquam laudantium vitae minima asperiores consequatur earum voluptas labore fuga?</p>
+            <div class="icons">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+            <p>Made with <i class="far fa-heart"></i> by Students of NMIMS</p>
+        </section>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function openMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
